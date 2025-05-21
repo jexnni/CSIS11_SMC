@@ -6,12 +6,16 @@ With VSCode open
 
 2. Cloning from Github
 
+
+For https:
 ```
-#For https:
 
     git clone https://github.com/jexnni/CSIS11_SMC.git
 
-#For SSH:
+```
+
+For SSH:
+```
 
     git clone git@github.com:jexnni/CSIS11_SMC.git
 
