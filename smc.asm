@@ -1,5 +1,7 @@
         .ORIG x3000  
         BR START
+
+; variables
 PROMPT1  .STRINGZ "Enter first number (4 digits): "
 PROMPT2  .STRINGZ "Enter second number (4 digits): "
 PROMPT3  .STRINGZ "Enter operation (+, -, *, /): "
@@ -8,7 +10,8 @@ ERR_OVERFLOW .STRINGZ "Error: Overflow!"
 ERR_UNDERFLOW .STRINGZ "Error: Underflow!"
 PTR      .FILL x4000
 OPERATOR .BLKW 1
-RESULT_STR .BLKW 5      ; result string
+RESULT_STR .BLKW 5 
+
 
 START   LD R6, PTR
         LEA R0, PROMPT1
@@ -28,6 +31,7 @@ START   LD R6, PTR
         JSR PRINT_RESULT
         HALT
 
+; user input
 READ_INPUT
         AND R0, R0, #0
         AND R2, R2, #0
@@ -53,6 +57,7 @@ INVALID_INPUT
         BR READ_INPUT
         RET
 
+; calls addition, multiplcation, subtraction, and division
 CALCULATE_INPUT
         AND R0, R0, #0
         LD R3, PLACE_1000
@@ -101,6 +106,7 @@ CALCULATE_INPUT
         ADD R0, R0, R1
         RET
 
+; storing and grabbing inputs
 PUSH_STACK
         ADD R6, R6, #-1
         STR R0, R6, #0
@@ -135,6 +141,8 @@ PERFORM_OP
         BRz DIVISION
         RET
 
+
+; math
 ADDITION
         ADD R0, R1, R2
         BRzp CHECK_OVERFLOW
