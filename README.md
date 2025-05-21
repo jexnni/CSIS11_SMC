@@ -6,6 +6,8 @@ I am super glad to be writing here today in order to gain more points for a fina
 
 This installation assumes you are running VSCode on Windows and with Linux Backend Environment.
 
+([Link to Installation Instructions!])
+
 ## Contact
 
 Please don't contact me about corrections, unless I get extra credit. 
