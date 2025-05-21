@@ -10,7 +10,7 @@ This installation assumes you are running VSCode on Windows and with Linux Backe
 
 ## Contact
 
-Please don't contact me about corrections, unless I get extra credit. 
+Please don't contact me about corrections, because I am scared of coding. 
 
 ## Acknowledgements and Citations
 
