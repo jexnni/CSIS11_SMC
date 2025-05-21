@@ -6,7 +6,7 @@ I am super glad to be writing here today in order to gain more points for a fina
 
 This installation assumes you are running VSCode on Windows and with Linux Backend Environment.
 
-[Link to Installation Instructions!](CSIS11_SMC/blob/main/installation.md)
+[Link to Installation Instructions!](/blob/main/installation.md)
 
 ## Contact
 
